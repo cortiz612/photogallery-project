@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  /* Remove 'size: 200px;' - it seems to be an incorrect property */
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: white;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background-color: rgb(66, 66, 66);
+  margin: 0; /* Add this to remove default margin */
+}
+
+section {
+  /* Change 'width:center;' to 'margin: 0 auto;' to center the section */
+  width: 80%; /* Adjust the width as needed */
+  margin: 0 auto;
+}
+
+.frame {
+  position: relative;
+}
+
+img {
+  max-width: 100%; /* Use 'max-width' to ensure responsiveness */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.slide {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.hide {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.current {
+  transition: opacity 0.5s ease-out;
+}
+
+.controls a {
+  padding: 1rem;
+}
+
+
+
+.navbar {
+  list-style-type: none;
+  padding: 0; /* Fix 'padding: 05;' to 'padding: 0;' */
+  background-color: #333;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 20px; /* Adjust the margin as needed */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 30px 0;
+}
+
+
+.controls-hide {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0;
+  margin: 100px 0; 
+}
+
+.controls a {
+  padding: 1rem 2rem; /* Adjust the padding to make the buttons larger */
+  text-align: center;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+p {
+  color: white;
+}
